@@ -26,7 +26,7 @@ export default [
       '**/.env*.local',
       '**/yarn-error.log',
       'coverage',
-      'webpack.config.js',
+      '**/webpack*.js',
       'postcss.config.js',
       'tailwind.config.js',
       'jest.config.js',
