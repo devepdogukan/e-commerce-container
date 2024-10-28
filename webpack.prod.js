@@ -13,7 +13,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: 'https://e-commerce-container.vercel.app',
+    publicPath: 'https://e-commerce-container.vercel.app/',
   },
   devtool: 'inline-source-map',
   resolve: {
@@ -43,7 +43,8 @@ module.exports = {
       name: 'container',
       filename: 'remoteEntry.js',
       remotes: {
-        productApp: 'productListing@http://localhost:3001/remoteEntry.js',
+        productApp:
+          'productListing@https://e-commerce-product-silk.vercel.app/remoteEntry.js',
         userAuthenticationApp:
           'userAuthentication@http://localhost:3002/remoteEntry.js',
         shoppingCartApp: 'shoppingCart@http://localhost:3003/remoteEntry.js',
