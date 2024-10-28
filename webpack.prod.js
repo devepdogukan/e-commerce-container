@@ -46,9 +46,11 @@ module.exports = {
         productApp:
           'productListing@https://e-commerce-product-silk.vercel.app/remoteEntry.js',
         userAuthenticationApp:
-          'userAuthentication@http://localhost:3002/remoteEntry.js',
-        shoppingCartApp: 'shoppingCart@http://localhost:3003/remoteEntry.js',
-        orderHistoryApp: 'orderHistory@http://localhost:3004/remoteEntry.js',
+          'userAuthentication@https://e-commerce-authentication-flame.vercel.app/remoteEntry.js',
+        shoppingCartApp:
+          'shoppingCart@https://e-commerce-shopping-cart-ten.vercel.app/remoteEntry.js',
+        orderHistoryApp:
+          'orderHistory@https://e-commerce-orders.vercel.app/remoteEntry.js',
       },
 
       exposes: {
