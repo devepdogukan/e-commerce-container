@@ -24,7 +24,8 @@
   },
   "scripts": {
     "start": "webpack serve --config webpack.dev.js",
-    "start-all": "concurrently \"npm --prefix ../product-listing start\" \"npm --prefix ../user-authentication start\" \"npm --prefix ../shopping-cart start\" \"npm --prefix ../order-history start\" \"npm start\"",
+    "setup-all": "concurrently \"pnpm --prefix ../e-commerce-authentication install\" \"pnpm --prefix ../e-commerce-orders install\" \"pnpm --prefix ../e-commerce-product install\" \"pnpm --prefix ../e-commerce-shopping-cart install\" \"pnpm install\"",
+    "start-all": "concurrently \"npm --prefix ../e-commerce-authentication start\" \"npm --prefix ../e-commerce-orders start\" \"npm --prefix ../e-commerce-product start\" \"npm --prefix ../e-commerce-shopping-cart start\" \"npm start\"",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint src",
     "format": "prettier --write src",
